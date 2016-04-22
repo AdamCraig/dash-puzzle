@@ -14,4 +14,10 @@ public class AppTest {
     App testPuzzle = new App();
     assertEquals("m-yb-", testPuzzle.puzzleMaker("maybe"));
   }
+
+  @Test
+  public void puzzleMaker_forMultipleWordInputWithVowels_stringWithDashesInPlaceOfVowels() {
+    App testPuzzle = new App();
+    assertEquals("-nd-rst-nd-ng -s - sk-ll", testPuzzle.puzzleMaker("understanding is a skill"));
+  }
 }
