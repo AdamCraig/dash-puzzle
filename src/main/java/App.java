@@ -39,16 +39,4 @@ public class App {
 
     return puzzleMadeFromInput;
   }
-
-  public String solveThePuzzle(String guess) {
-
-    String correctAnswer = "puppy";
-
-    if (guess.equals(correctAnswer)) {
-      return "That's correct!";
-    } else {
-      return "Sorry, that's wrong.";
-    }
-
-  }
 }

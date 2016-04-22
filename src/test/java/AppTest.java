@@ -57,11 +57,4 @@ public class AppTest extends FluentTest {
     App testPuzzle = new App();
     assertEquals("D-GS -R- C--L", testPuzzle.puzzleMaker("DOGS ARE COOL"));
   }
-
-  @Test
-  public void solveThePuzzle_forExactGuessMatch_stringSayingThatsCorrect() {
-    App testPuzzle = new App();
-    String inputFromPuzzleMaker = testPuzzle.puzzleMaker("puppy");
-    assertEquals("That's correct!", testPuzzle.solveThePuzzle("puppy"));
-  }
 }
