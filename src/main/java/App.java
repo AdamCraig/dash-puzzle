@@ -4,6 +4,6 @@ public class App {
   public String puzzleMaker(String input) {
 
     //
-    return "";
+    return input;
   }
 }
