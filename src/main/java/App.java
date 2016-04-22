@@ -9,7 +9,9 @@ public class App {
 
     puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("a", "-");
     puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("e", "-");
-
+    puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("i", "-");
+    puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("o", "-");
+    puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("u", "-");
 
     return puzzleMadeFromInput;
   }
