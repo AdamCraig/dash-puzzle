@@ -20,4 +20,10 @@ public class AppTest {
     App testPuzzle = new App();
     assertEquals("-nd-rst-nd-ng -s - sk-ll", testPuzzle.puzzleMaker("understanding is a skill"));
   }
+
+  @Test
+  public void puzzleMaker_forMultipleWordInputWithVowelsAndCapitalLetters_stringWithDashesInPlaceOfVowels() {
+    App testPuzzle = new App();
+    assertEquals("D-GS -R- C--L", testPuzzle.puzzleMaker("DOGS ARE COOL"));
+  }
 }
