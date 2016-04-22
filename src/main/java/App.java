@@ -6,12 +6,11 @@ public class App {
   public String puzzleMaker(String input) {
 
     String puzzleMadeFromInput = input;
+    char[] vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
 
-    puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("a", "-");
-    puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("e", "-");
-    puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("i", "-");
-    puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("o", "-");
-    puzzleMadeFromInput = puzzleMadeFromInput.replaceAll("u", "-");
+    for (char vowel : vowels) {
+      puzzleMadeFromInput = puzzleMadeFromInput.replace(vowel, '-');
+    }
 
     return puzzleMadeFromInput;
   }
