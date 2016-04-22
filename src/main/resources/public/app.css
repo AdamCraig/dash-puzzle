@@ -1,4 +1,5 @@
 body {
+  font-family: 'Play', sans-serif;
   background-color: black;
   color: white;
   text-align: center;
@@ -7,22 +8,27 @@ body {
 .btn {
   font-size: 20pt;
   margin-top: 10px;
-  background-color: transparent;
+  background-color: #745240;
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-image: url(/button.jpg);
   background-size: 100% 100%;
 }
 
 .btn:hover {
   color: white;
-  font-size: 25pt;
+  font-size: 22pt;
 }
 
 .btn:active {
-  height: 220px;
-  width: 220px;
+  height: 205px;
+  width: 205px;
   background-image: url(/button.jpg);
   border: none;
+}
+
+#puzzleStyle {
+  font-family: 'Special Elite', sans-serif;
+  font-size: 4em;
+  border: dotted #745240;
 }
