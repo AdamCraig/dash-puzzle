@@ -20,7 +20,7 @@ public class App {
     String correctAnswer = "puppy";
 
     if (guess.equals(correctAnswer)) {
-      return "TEST FAIL";
+      return "That's correct!";
     } else {
       return "Sorry, that's wrong.";
     }
