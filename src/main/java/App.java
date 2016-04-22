@@ -14,4 +14,16 @@ public class App {
 
     return puzzleMadeFromInput;
   }
+
+  public String solveThePuzzle(String guess) {
+
+    String correctAnswer = "puppy";
+
+    if (guess.equals(correctAnswer)) {
+      return "TEST FAIL";
+    } else {
+      return "Sorry, that's wrong.";
+    }
+
+  }
 }

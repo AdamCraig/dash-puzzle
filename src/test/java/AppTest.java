@@ -26,4 +26,10 @@ public class AppTest {
     App testPuzzle = new App();
     assertEquals("D-GS -R- C--L", testPuzzle.puzzleMaker("DOGS ARE COOL"));
   }
+
+  @Test
+  public void solveThePuzzle_forExactGuessMatch_stringSayingThatsCorrect() {
+    App testPuzzle = new App();
+    assertEquals("That's correct!", testPuzzle.solveThePuzzle("puppy"));
+  }
 }
