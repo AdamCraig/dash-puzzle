@@ -14,9 +14,21 @@ public class App {
       model.put("template", "templates/home.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+    get("/results", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/results.vtl");
+
+      String word = request.queryParams("word");
+      String puzzle = App.puzzleMaker(word);
+      model.put("word", word);
+      model.put("puzzle", puzzle);
+      model.put("template", "templates/results.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 
-  public String puzzleMaker(String input) {
+  public static String puzzleMaker(String input) {
 
     String puzzleMadeFromInput = input;
     char[] vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
