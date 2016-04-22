@@ -35,6 +35,14 @@ public class AppTest extends FluentTest {
   }
 
   @Test
+  public void puzzleMaker_noVowelsFound() {
+    goTo("http://localhost:4567");
+    fill("#word").with("whyWhyWHY");
+    submit(".btn");
+    assertThat(pageSource()).contains("whyWhyWHY");
+  }
+
+  @Test
   public void puzzleMaker_forAnyStringInputWithoutVowels_string() {
     App testPuzzle = new App();
     assertEquals("why", testPuzzle.puzzleMaker("why"));

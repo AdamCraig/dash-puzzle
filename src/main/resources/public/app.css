@@ -23,12 +23,14 @@ body {
 .btn:active {
   height: 205px;
   width: 205px;
-  background-image: url(/button.jpg);
   border: none;
 }
 
 #puzzleStyle {
+  padding-top: 25px;
+  padding-bottom: 15px;
   font-family: 'Special Elite', sans-serif;
+  font-weight: bold;
   font-size: 4em;
   border: dotted #745240;
 }
