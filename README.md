@@ -1,3 +1,6 @@
+![Home Page](screenshot1.png)
+![Results](screenshot2.png)
+
 # _Dash-Puzzle_
 
 #### _An interactive Java web app that converts input into an encrypted message with vowels missing, ready for another user to guess at what the encrypted message could be._
@@ -10,7 +13,7 @@ _An interactive Java web app that allows a user to enter a word or sentence and 
 
 ## Setup/Installation Requirements
 
-* _When the layout.vtl file is hosted, it can be viewed in any web browser._
+* _In the command line, clone the git repository to a directory (git clone https://github.com/AdamCraig/dash-puzzle). Navigate to the local repository's folder and use gradle to run the server (gradle run)._
 
 ## Known Bugs
 
